@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Task Tracker</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!-- <img src="logo.png" alt="Logo" class="logo"> -->
+      <span class="subtitle">ECI Transition Management Tasks Tracker</span>
+    </div>
+    <ul class="nav-links">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Projects</a>
+        <ul class="sub-menu">
+          <li><a href="https://ezecastleintegration.sharepoint.com/:x:/r/sites/transition-management-private/_layouts/15/Doc.aspx?sourcedoc=%7BFABE83F3-F044-4D9B-9E90-29EBDF31F257%7D&file=Transition%20Management%20Tracker%20-%202023.xlsx&action=default&mobileredirect=true">All Projects</a></li>
+          <li><a href="#">My Projects</a></li>
+          <li><a href="#">Cutover Schedules</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Project Tracker</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">View Task History</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Task Tracker</h1>
+    <div class="controls">
+      <input type="text" id="taskInput" placeholder="Enter a task...">
+      <div class="button-group">
+        <button id="startBtn" class="startButton">Start</button>
+        <button id="stopBtn" class="stop">Stop</button>
+        <button id="clearBtn">Clear</button>
+      </div>
+    </div>
+    <div id="timer" class="timer">00:00:00</div>
+    <table id="taskTable">
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Start Time</th>
+          <th>End Time</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Task entries will be added here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

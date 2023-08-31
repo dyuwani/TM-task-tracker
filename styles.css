@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3; /* Light gray background */
+  }
+  
+  .navbar {
+    background-color: #6600cc; /* Violet navbar background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .sub-menu {
+    display: none;
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.514); /* Violet sub-menu background */
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .nav-item:hover .sub-menu {
+    display: block;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding: 20px;
+    background-color: white; /* White container background */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: column; /* Place buttons below the input */
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .button-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+  
+  button.startButton {
+    background-color: #00cc00; /* Violet start button background */
+    color: white;
+  }
+  
+  button.stop {
+    background-color: #ff0033; /* Red stop button background */
+    color: white;
+  }
+  
+  .timer {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #6600cc; /* Violet header background */
+    color: white;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f3f3f3; /* Light gray background for even rows */
+  }
+  input[type="text"] {
+    padding: 12px; /* Increase padding for bigger input */
+    font-size: 18px; /* Increase font size for bigger input */
+    width: 80%; /* Adjust the width as needed */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    
+  }
+  
